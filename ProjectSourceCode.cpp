@@ -29,13 +29,7 @@ private:
 public:
     Register();
         void setUsernameAndPassword()
-    {
-        cout << "\tENTER ANY USER NAME : ";
-        cin >> username;
 
-        cout << "\tENTER ANY PASSWORD  : ";
-        cin >> password;
-    }
     void setFullName()
     {
         cout << "ENTER YOUR FULL NAME   : ";
