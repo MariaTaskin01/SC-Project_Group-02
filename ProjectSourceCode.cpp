@@ -318,7 +318,7 @@ public:
         productList.emplace_back(i, n, p);
     }
 
-    void removeProductListProduct(string r)
+    void removeProduct(string r)
     {
         int RE;
         for (int i = 0; i < productList.size(); i++)
