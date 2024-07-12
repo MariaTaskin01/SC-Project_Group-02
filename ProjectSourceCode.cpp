@@ -398,7 +398,7 @@ public:
         cout << endl;
     }
 
-    void removeProductAdmin()
+    void removeProduct()
     {
         int count;
         string id;
@@ -413,7 +413,7 @@ public:
 
             cout << "Mention Product id: ";
             cin >> id;
-            ProductList::removeProductListProduct(id);
+            ProductList::removeProduct(id);
             cout << endl;
         }
     }
