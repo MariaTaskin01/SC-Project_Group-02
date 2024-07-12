@@ -152,7 +152,10 @@ void Register::DoRegistration()
     setAddress();
     cout << endl
          << endl;
-    setUsernameAndPassword();
+    cout << "\tENTER YOUR USERNAME : ";
+    cin >> username;
+    cout << "\tENTER YOUR PASSWORD : ";
+    cin >> password;
     ofstream file;
     file.open("userinfo.txt", ios::binary);
     file << username << endl;
@@ -196,7 +199,10 @@ void Register::DoLogin()
          << "-------------------------------------------------" << endl
          << endl
          << endl;
-    setUsernameAndPassword();
+    cout << "\tENTER YOUR USERNAME : ";
+    cin >> username;
+    cout << "\tENTER YOUR PASSWORD : ";
+    cin >> password;
 
     ifstream read("userinfo.txt", ios::binary);
     getline(read, retrive_un);
@@ -312,7 +318,7 @@ public:
         productList.emplace_back(i, n, p);
     }
 
-    void removeProduct(string r)
+    void removeProductListProduct(string r)
     {
         int RE;
         for (int i = 0; i < productList.size(); i++)
@@ -392,7 +398,7 @@ public:
         cout << endl;
     }
 
-    void removeProduct()
+    void removeProductAdmin()
     {
         int count;
         string id;
@@ -407,7 +413,7 @@ public:
 
             cout << "Mention Product id: ";
             cin >> id;
-            ProductList::removeProduct(id);
+            ProductList::removeProductListProduct(id);
             cout << endl;
         }
     }
@@ -473,7 +479,7 @@ public:
         cout << endl;
     }
 
-    void removeProduct()
+    void removeProductFromCart()
     {
         int count;
         string id;
