@@ -479,7 +479,7 @@ public:
         cout << endl;
     }
 
-    void removeProductFromCart()
+    void removeProduct()
     {
         int count;
         string id;
