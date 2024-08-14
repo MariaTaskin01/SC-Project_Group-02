@@ -197,6 +197,7 @@ void Register::DoLogin()
          << "-------------------------------------------------" << endl
          << endl
          << endl;
+
     setUsernameandPassword();
 
     ifstream read("userinfo.txt", ios::binary);
